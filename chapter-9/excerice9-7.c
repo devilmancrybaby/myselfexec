@@ -5,24 +5,22 @@
 #include <stdio.h>
 
 void put_stringn(const char s[], int n) {
-    int i, j;
+    int i, j = 0;
 
     for (i = 0; i < n; i++) {
         while (s[j]) {
-            putchar(s[j++]);
+            putchar(s[j++]);/*循环结束s[j]=\0,所以下面要把j复原 j=0*/
 
         }
 
-        j = 0;
+        j = 0;/* 初始化s[j]*/
     }
-
-    return ;
 }
 
 int main(void) {
     char s[] = {"ABC"};
     int a = 3;
 
-    put_stringn(s,a);
+    put_stringn(s, a);
     return 0;
 }

@@ -15,3 +15,5 @@ int str_char(const char s[], int c) {
 
         return j;
     }
+
+

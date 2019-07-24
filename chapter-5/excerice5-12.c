@@ -49,7 +49,8 @@ int main(void) {
 
         putchar('\n');
     }
-printf("\n");
+
+    printf("\n");
     // // for (int k = 0; k < 2; k++) {
     // for (i = 0; i < 4; i++) {
     //     for (j = 0; j < 3; j++) {
@@ -92,8 +93,10 @@ printf("\n");
             for (j = 0; j < 3; j++) {
                 printf(" %d ", tensu3[k][i][j]);
             }
+
             printf("\n");
         }
+
         printf("\n");
     }
 
